@@ -1,4 +1,4 @@
-package com.example.test.domain.models
+package com.example.test.domain.models.auth
 
 data class Login(
     val login: String,

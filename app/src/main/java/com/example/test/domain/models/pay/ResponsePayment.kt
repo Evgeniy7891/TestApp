@@ -1,4 +1,4 @@
-package com.example.test.domain.models
+package com.example.test.domain.models.pay
 
 
 data class ResponsePayment(

@@ -1,4 +1,4 @@
-package com.example.test.domain.models
+package com.example.test.domain.models.pay
 
 import com.google.gson.annotations.SerializedName
 

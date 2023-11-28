@@ -1,6 +1,6 @@
 package com.example.test.utils
 
-import com.example.test.domain.models.NetworkState
+import com.example.test.domain.models.network.NetworkState
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import retrofit2.HttpException

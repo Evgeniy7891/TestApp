@@ -1,6 +1,6 @@
 package com.example.test.utils
 
-import com.example.test.domain.models.NetworkState
+import com.example.test.domain.models.network.NetworkState
 
 inline fun <T> NetworkState<T>.applyIfSuccess(block: (T) -> Unit) =
     this.also {

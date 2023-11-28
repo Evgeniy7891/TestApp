@@ -1,8 +1,8 @@
 package com.example.test.domain.usecase
 
-import com.example.test.domain.models.Login
-import com.example.test.domain.models.NetworkState
-import com.example.test.domain.models.TokenSuccess
+import com.example.test.domain.models.auth.Login
+import com.example.test.domain.models.network.NetworkState
+import com.example.test.domain.models.auth.TokenSuccess
 import com.example.test.domain.repository.AuthRepository
 import javax.inject.Inject
 

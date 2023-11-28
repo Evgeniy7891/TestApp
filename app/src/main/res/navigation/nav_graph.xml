@@ -7,7 +7,20 @@
 
     <fragment
         android:id="@+id/authFragment"
-        android:name="com.example.test.ui.AuthFragment"
+        android:name="com.example.test.ui.auth.AuthFragment"
         android:label="fragment_auth"
-        tools:layout="@layout/fragment_auth" />
+        tools:layout="@layout/fragment_auth" >
+        <action
+            android:id="@+id/action_authFragment_to_payFragment"
+            app:destination="@id/payFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.example.test.ui.pay.PayFragment"
+        android:label="fragment_pay"
+        tools:layout="@layout/fragment_pay" >
+        <action
+            android:id="@+id/action_payFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+    </fragment>
 </navigation>

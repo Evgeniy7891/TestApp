@@ -1,4 +1,4 @@
-package com.example.test.domain.models
+package com.example.test.domain.models.network
 
 sealed class NetworkState<out Data> {
 

@@ -1,8 +1,8 @@
 package com.example.test.providers.network
 
-import com.example.test.domain.models.Login
-import com.example.test.domain.models.Payments
-import com.example.test.domain.models.TokenSuccess
+import com.example.test.domain.models.auth.Login
+import com.example.test.domain.models.pay.Payments
+import com.example.test.domain.models.auth.TokenSuccess
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Header
