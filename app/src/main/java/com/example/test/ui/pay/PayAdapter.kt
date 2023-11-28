@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test.databinding.ItemPayBinding
 import com.example.test.domain.models.pay.ResponsePayment
+import com.example.test.utils.Formatting
 
 class PayAdapter :
 
@@ -28,9 +29,9 @@ class PayAdapter :
         fun bind(pay: ResponsePayment) {
             with(binding) {
                 titleContent.text = pay.title
-                amountContent.text = pay.amount.toString()
-                createdContent.text = pay.created.toString()
-                if(pay.amount == null || pay.amount == "") amountContent.text = "no data"
+                if(pay.amount.toString().isNotEmpty() && pay.amount != null) amountContent.text = Formatting.roundTheNumber(pay.amount.toString().toDouble())
+                createdContent.text = pay.created?.let { Formatting.converterDate(it.toLong()) }
+                if(pay.amount == null || pay.amount == "" || pay.amount.toString().isEmpty()) amountContent.text = "no data"
                 if(pay.created == null) createdContent.text = "no data"
             }
         }
